@@ -265,6 +265,7 @@
 <testFailureIgnore>true</testFailureIgnore>
 <testFailureIgnore>true</testFailureIgnore>
 <testFailureIgnore>true</testFailureIgnore>
+<testFailureIgnore>true</testFailureIgnore>
           <testFailureIgnore>true</testFailureIgnore>
           <classpathDependencyExcludes>
             <exclude>javax.measure:jsr-275</exclude>
@@ -284,6 +285,17 @@
                         </executions>
                     </plugin>
                 <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>cobertura-maven-plugin</artifactId>
+          <version>2.7</version>
+          <configuration>
+              <format>xml</format>
+              <maxmem>256m</maxmem>
+              <!-- aggregated reports for multi-module projects -->
+              <aggregate>true</aggregate>
+          </configuration>
+         </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>cobertura-maven-plugin</artifactId>
           <version>2.7</version>
@@ -753,6 +765,7 @@
 <testFailureIgnore>true</testFailureIgnore>
 <testFailureIgnore>true</testFailureIgnore>
 <testFailureIgnore>true</testFailureIgnore>
+<testFailureIgnore>true</testFailureIgnore>
           <testFailureIgnore>true</testFailureIgnore>
           <classpathDependencyExcludes>
             <exclude>javax.measure:jsr-275</exclude>
@@ -806,6 +819,17 @@
                         </configuration>
                     </plugin>
                 <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>cobertura-maven-plugin</artifactId>
+          <version>2.7</version>
+          <configuration>
+              <format>xml</format>
+              <maxmem>256m</maxmem>
+              <!-- aggregated reports for multi-module projects -->
+              <aggregate>true</aggregate>
+          </configuration>
+         </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>cobertura-maven-plugin</artifactId>
           <version>2.7</version>
@@ -1547,6 +1571,7 @@
 <testFailureIgnore>true</testFailureIgnore>
 <testFailureIgnore>true</testFailureIgnore>
 <testFailureIgnore>true</testFailureIgnore>
+<testFailureIgnore>true</testFailureIgnore>
           <testFailureIgnore>true</testFailureIgnore>
           <classpathDependencyExcludes>
             <exclude>javax.measure:jsr-275</exclude>
@@ -2037,6 +2062,17 @@
               <aggregate>true</aggregate>
           </configuration>
          </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>cobertura-maven-plugin</artifactId>
+          <version>2.7</version>
+          <configuration>
+              <format>xml</format>
+              <maxmem>256m</maxmem>
+              <!-- aggregated reports for multi-module projects -->
+              <aggregate>true</aggregate>
+          </configuration>
+         </plugin>
         </plugins>
         </pluginManagement>
 
@@ -2063,6 +2099,17 @@
                 <artifactId>clojure-maven-plugin</artifactId>
                 <extensions>true</extensions>
             </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>cobertura-maven-plugin</artifactId>
+          <version>2.7</version>
+          <configuration>
+              <format>xml</format>
+              <maxmem>256m</maxmem>
+              <!-- aggregated reports for multi-module projects -->
+              <aggregate>true</aggregate>
+          </configuration>
+         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>cobertura-maven-plugin</artifactId>
